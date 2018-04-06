@@ -13,6 +13,7 @@ const formatAnimals = (animals) => {
     .sort((a, b) => b.weight > a.weight)
     .map((animal, index) => Object.assign({}, animal, { free: true, id: index }));
 };
+
 // Animals filter function
 const isLessThan = weight => elem => elem.weight <= weight;
 const isEqualTo = weight => elem => elem.weight === weight;
